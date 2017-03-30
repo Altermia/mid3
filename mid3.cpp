@@ -176,12 +176,12 @@ double pondata[480] = {135.000000, 50.000000, 13.572088,
 int main(int argc, char *argv[])
 {
 #ifdef UTEST
-    double tolerance;
+    double tolerance = 0.05;
 	if (argc < 2) {
 		cout << "No input was detected.                  \n";
 		cout << "                                        \n";
 		cout << "Program usage: ./program <tolerance>\n";
-		cout << "(default values will be displayed)      \n";
+		cout << "(default value of 0.05 will be displayed)      \n";
 	}
 	if (argc > 1)
 		tolerance = atof(argv[1]);
